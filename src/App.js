@@ -1,10 +1,11 @@
 import CreateCourse from './Pages/CreateCourse/CreateCourse';
+import EmailForm from './Pages/EmailForm/EmailForm';
 
 function App() {
   return (
     <div>
-      <CreateCourse></CreateCourse>
-      {/* <Courses></Courses> */}
+      {/* <CreateCourse></CreateCourse> */}
+      <EmailForm></EmailForm>
     </div>
   );
 }

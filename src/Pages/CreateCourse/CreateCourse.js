@@ -3,16 +3,28 @@ import { Table } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
 
 const CreateCourse = () => {
-    const [courses, setCourses] = useState([]);
+    // const [courses, setCourses] = useState([]);
     const [semester, setSemester] = useState("");
+    const [session, setSession] = useState();
+    const [teacher, setTeacher] = useState();
+
+    const info = {};
 
 
-    useEffect(() => {
-        fetch('./course.json')
-            .then(res => res.json())
-            .then(data => setCourses(data))
 
-    }, []);
+
+    const handleClick = () => {
+        console.log("ok");
+        info["semester"] = semester;
+        info["session"] = session;
+        info["teacher"] = teacher;
+        console.log(info);
+        // console.log(session);
+        // console.log(teacher);
+    }
+
+
+
 
     //
 
@@ -43,7 +55,7 @@ const CreateCourse = () => {
             <Form.Group className="mb-3 w-100 mx-auto">
                 <Form.Label className='text-danger'>Session:</Form.Label>
                 <br></br>
-                <Form.Select>
+                <Form.Select onChange={(e) => setSession(e.target.value)}>
                     <option value="16">2015-16</option>
                     <option value="17">2016-17</option>
                     <option value="18">2017-18</option>
@@ -66,7 +78,7 @@ const CreateCourse = () => {
                     <tr>
                         <td>Computer Graphics</td>
                         <td>
-                            <Form.Select>
+                            <Form.Select onChange={(e) => setTeacher(e.target.value)}>
                                 <option value="lubna">Lubna Yasmin Pinky</option>
                                 <option value="motiur">Md. Motiur Rahman</option>
                                 <option value="nasir">Mostofa Kamal Nasir</option>
@@ -77,6 +89,8 @@ const CreateCourse = () => {
 
                 </tbody>
             </Table>
+
+            <button className='btn btn-primary' onClick={handleClick}>Create</button>
 
 
         </div>

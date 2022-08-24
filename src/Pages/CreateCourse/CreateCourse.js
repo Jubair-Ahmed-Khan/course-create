@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
-// import { Table } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
 
 const CreateCourse = () => {
     const [courses, setCourses] = useState([]);
     const [semester, setSemester] = useState("");
+
 
     useEffect(() => {
         fetch('./course.json')
@@ -16,7 +16,9 @@ const CreateCourse = () => {
 
     //
 
-    const filteredCourses = courses.filter(course => course.key === semester);
+    // const filteredCourses = courses?.filter(course => course.key === semester);
+    // const [selectedCourses] = filteredCourses?.courses;
+    // const [selectedTeachers] = selectedCourses?.teachers;
 
 
 
@@ -72,6 +74,7 @@ const CreateCourse = () => {
                         </td>
                     </tr>
 
+
                 </tbody>
             </Table>
 
@@ -81,14 +84,3 @@ const CreateCourse = () => {
 };
 
 export default CreateCourse;
-
-{/* <tr>
-    <td>Data Mining</td>
-    <td>
-        <Form.Select aria-label="multiple select example">
-            <option value="mahfuz">Md.Mahfuz Reza</option>
-            <option value="sultan">Md. Sultan Ahammad</option>
-            <option value="hadifur">Md. Hadifur Rahman</option>
-        </Form.Select>
-    </td>
-</tr> */}

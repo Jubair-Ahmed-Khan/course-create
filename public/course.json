@@ -1,0 +1,108 @@
+[
+    {
+        "key": "1",
+        "courses": [
+            {
+                "name": "Computer Basics and Programming Fundamentals",
+                "teachers": [
+                    "Mostofa Kamal Nasir",
+                    "Md. Mosaddik Hasan",
+                    "Lubna Yasmin Pinky"
+                ]
+            },
+            {
+                "name": "Computer Basics and Programming Fundamentals Lab",
+                "teachers": [
+                    "Mostofa Kamal Nasir",
+                    "Lubna Yasmin Pinky"
+                ]
+            },
+            {
+                "name": "Electrical Circuit Analysis",
+                "teachers": [
+                    "Md. Hadifur Rahman",
+                    "Md. Motiur Rahman"
+                ]
+            },
+            {
+                "name": "Electrical Circuit Analysis Lab",
+                "teachers": [
+                    "Md Hadifur Rahman",
+                    "Md Shazzad Hossain"
+                ]
+            },
+            {
+                "name": "Mathematics I",
+                "teachers": [
+                    "Md. Babul Hossain",
+                    "Md. Musa Mia"
+                ]
+            },
+            {
+                "name": "English",
+                "teachers": [
+                    "Md. Anisul Islam"
+                ]
+            },
+            {
+                "name": "Economics and Sociology",
+                "teachers": [
+                    "Md. Rafiqul Kabir"
+                ]
+            }
+        ]
+    },
+    {
+        "key": "2",
+        "courses": [
+            {
+                "name": "Computer Basics and Programming Fundamentals",
+                "teachers": [
+                    "Mostofa Kamal Nasir",
+                    "Md. Mosaddik Hasan",
+                    "Lubna Yasmin Pinky"
+                ]
+            },
+            {
+                "name": "Computer Basics and Programming Fundamentals Lab",
+                "teachers": [
+                    "Mostofa Kamal Nasir",
+                    "Lubna Yasmin Pinky"
+                ]
+            },
+            {
+                "name": "Electrical Circuit Analysis",
+                "teachers": [
+                    "Md. Hadifur Rahman",
+                    "Md. Motiur Rahman"
+                ]
+            },
+            {
+                "name": "Electrical Circuit Analysis Lab",
+                "teachers": [
+                    "Md Hadifur Rahman",
+                    "Md Shazzad Hossain"
+                ]
+            },
+            {
+                "name": "Mathematics I",
+                "teachers": [
+                    "Md. Babul Hossain",
+                    "Md. Musa Mia"
+                ]
+            },
+            {
+                "name": "English",
+                "teachers": [
+                    "Md. Anisul Islam"
+                ]
+            },
+            {
+                "name": "Economics and Sociology",
+                "teachers": [
+                    "Md. Rafiqul Kabir"
+                ]
+            }
+        ]
+    }
+]

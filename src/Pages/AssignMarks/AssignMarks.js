@@ -31,10 +31,10 @@ const AssignMarks = () => {
                             <tbody>
                                 <tr>
                                     <td>
-                                        <input {...register("Student_id", { required: true })} />
+                                        <input value="CE17050"{...register("Student_id", { required: true })} readOnly />
                                     </td>
                                     <td>
-                                        <input {...register("Student_name", { required: true })} />
+                                        <input value="Jubair Ahmed Khan" {...register("Student_name", { required: true })} readOnly />
                                     </td>
                                     <td>
                                         <input {...register("Assign_mark", { required: true })} />

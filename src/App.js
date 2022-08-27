@@ -2,7 +2,9 @@
 // import EmailForm from './Pages/EmailForm/EmailForm';
 // import StudentCourseRegister from './Pages/StudentCourseRegister/StudentCourseRegister';
 
-import AssignMarks from "./Pages/AssignMarks/AssignMarks";
+import ReadExcel from "./Pages/ReadExcel/ReadExcel";
+
+// import AssignMarks from "./Pages/AssignMarks/AssignMarks";
 
 function App() {
   return (
@@ -10,7 +12,8 @@ function App() {
       {/* <CreateCourse></CreateCourse> */}
       {/* <EmailForm></EmailForm> */}
       {/* <StudentCourseRegister></StudentCourseRegister> */}
-      <AssignMarks></AssignMarks>
+      {/* <AssignMarks></AssignMarks> */}
+      <ReadExcel></ReadExcel>
     </div>
   );
 }

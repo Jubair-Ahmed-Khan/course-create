@@ -20,7 +20,7 @@ const StudentCourseRegister = () => {
 
 
                 <Form onSubmit={handleSubmit(onSubmit)}>
-                    <div className="row row-cols-lg-5 row-cols-md-4 row-cols-sm-3">
+                    <div className="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1">
                         <Form.Group className="mb-3">
                             <Form.Label className='text-danger'>Name: </Form.Label>
 

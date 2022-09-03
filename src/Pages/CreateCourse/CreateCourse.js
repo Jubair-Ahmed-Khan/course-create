@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Form from 'react-bootstrap/form';
 import { useForm } from 'react-hook-form';
 
 const CreateCourse = () => {
 
     const { register, handleSubmit } = useForm();
+    const [category, setCategory] = useState("");
+    const [title, setTitle] = useState("");
 
     const onSubmit = data => {
         console.log(data);
@@ -25,7 +27,7 @@ const CreateCourse = () => {
                         </Form.Group>
                         <Form.Group className="mb-2">
                             <Form.Label className='text-danger'>Course Title: </Form.Label>
-                            <input type="text" {...register("course_title", { required: true })} className="w-100" />
+                            <input type="text" {...register("course_title", { required: true })} className="w-100" value={title} />
                         </Form.Group>
                         {/* <Form.Group className="mb-3">
                             <Form.Label className='text-danger'>Department: </Form.Label>
@@ -45,7 +47,7 @@ const CreateCourse = () => {
                                 <option value="ftns">Food Technology and Nutritional Science</option>
                                 <option value="bge">Biotechnology and Genetic Engineering</option>
                                 <option value="bmb">Biochemistry and Molecular Biology</option>
-                                <option value="6">Pharmacy</option>
+                                <option value="pharm">Pharmacy</option>
                                 <option value="chem">Chemistry</option>
                                 <option value="math">Mathematics</option>
                                 <option value="phy">Physics</option>
@@ -90,13 +92,30 @@ const CreateCourse = () => {
                         <Form.Group className="mb-2">
                             <Form.Label className='text-danger'>Category:</Form.Label>
                             <br></br>
-                            <Form.Select {...register("category", { required: true })}>
+                            <Form.Select onChange={(e) => setCategory(e.target.value)}>
                                 <option>Select</option>
                                 <option value="compulsory">Compulsory</option>
                                 <option value="optional">Optional</option>
 
                             </Form.Select>
                         </Form.Group>
+                        {
+                            category &&
+                            <Form.Group className="mb-2">
+                                <Form.Label className='text-danger'>Optional Subject List: </Form.Label>
+                                <Form.Select {...register("course_title", { required: true })} onChange={(e) => setTitle(e.target.value)}>
+                                    <option>Select</option>
+                                    <option value="simulation">Simulation and Modelling</option>
+                                    <option value="simulation_lab">Simulation and Modelling Lab</option>
+                                    <option value="multimedia">Basic Multimedia Theory</option>
+                                    <option value="multimedia_lab">Basic Multimedia Theory Lab</option>
+                                    <option value="computational_geometry">Computational Geometry</option>
+                                    <option value="computational_geometry_lab">Computational Geometry Lab</option>
+
+                                </Form.Select>
+                            </Form.Group>
+
+                        }
                     </div>
 
                     <br />

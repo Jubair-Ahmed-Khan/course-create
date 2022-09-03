@@ -1,4 +1,5 @@
-import CreateCourse from './Pages/CreateCourse/CreateCourse';
+// import CreateCourse from './Pages/CreateCourse/CreateCourse';
+import SearchBar from './Pages/SearchBar/SearchBar';
 // import EmailForm from './Pages/EmailForm/EmailForm';
 // import StudentCourseRegister from './Pages/StudentCourseRegister/StudentCourseRegister';
 
@@ -15,7 +16,8 @@ import CreateCourse from './Pages/CreateCourse/CreateCourse';
 function App() {
   return (
     <div>
-      <CreateCourse></CreateCourse>
+      <SearchBar></SearchBar>
+      {/* <CreateCourse></CreateCourse> */}
       {/* <EmailForm></EmailForm> */}
       {/* <StudentCourseRegister></StudentCourseRegister> */}
       {/* <AssignMarks></AssignMarks> */}

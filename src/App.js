@@ -1,9 +1,9 @@
-// import CreateCourse from './Pages/CreateCourse/CreateCourse';
+import CreateCourse from './Pages/CreateCourse/CreateCourse';
 // import EmailForm from './Pages/EmailForm/EmailForm';
 // import StudentCourseRegister from './Pages/StudentCourseRegister/StudentCourseRegister';
 
 
-import DownloadPdf from "./Pages/DownloadPdf/DownloadPdf";
+// import DownloadPdf from "./Pages/DownloadPdf/DownloadPdf";
 // import ShowInfo from "./Pages/ShowInfo/ShowInfo";
 
 // import UserInfo from "./Pages/UserInfo/UserInfo";
@@ -15,14 +15,14 @@ import DownloadPdf from "./Pages/DownloadPdf/DownloadPdf";
 function App() {
   return (
     <div>
-      {/* <CreateCourse></CreateCourse> */}
+      <CreateCourse></CreateCourse>
       {/* <EmailForm></EmailForm> */}
       {/* <StudentCourseRegister></StudentCourseRegister> */}
       {/* <AssignMarks></AssignMarks> */}
       {/* <ReadExcel></ReadExcel> */}
       {/* <UserInfo></UserInfo> */}
       {/* <ShowInfo></ShowInfo> */}
-      <DownloadPdf></DownloadPdf>
+      {/* <DownloadPdf></DownloadPdf> */}
 
     </div>
   );

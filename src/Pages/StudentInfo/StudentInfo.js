@@ -3,7 +3,8 @@ import React from 'react';
 const StudentInfo = () => {
     const studentImage = "https://i.ibb.co/6HBxzwW/student.png";
     return (
-        <div className='d-flex shadow-lg p-3 mb-3'>
+        <div>
+
             <img src={studentImage} style={{ borderRadius: "50%" }} className="img-fluid" alt="student" />
 
             <div className='ms-5'>
@@ -16,6 +17,7 @@ const StudentInfo = () => {
                 <h6 className='fw-lighter'> <i className="fa fa-location-arrow text-secondary me-2"></i>  Thanapara, Tangail</h6>
             </div>
         </div>
+        </div >
     );
 };
 
